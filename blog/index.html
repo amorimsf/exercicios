@@ -1,110 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/blog/assets/css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.ico"
-      type="image/x-icon"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/svg-inject.min.js"></script>
 
-    <title>Blog</title>
-  </head>
+    <title>Blog Codelândia</title>
+</head>
 
-  <!--Cabeçalho e barra de pesquisa-->
-  
-  <body>
+<body>
     <header>
-      <div class="header-container">
-        <div class="header-logo">
-          <h1><span>Code</span>lândia</h1>
+        <div class="header-container">
+            <div class="header-container-title">
+                <h1><span>Code</span>lândia</h1>
+            </div>
+            <div class="header-container-search">
+                <input type="text" class="input" placeholder="Pesquisar no blog">
+                <div class="search-icon">
+                    <img src="assets/img/search.svg" alt="Search icon" onload="SVGInject(this)" />
+                </div>
+            </div>
         </div>
-        <div class="header-pesquisa">
-          <input type="search" class="input" placeholder="Pesquisar no Blog" />
-          <div class="pesquisa-icone">
-            <img
-              src="assets/img/heart.svg"
-              alt="icone de pesquisa"
-              onload="SVGinject(this)"
-            />
-          </div>
-        </div>
-      </div>
     </header>
 
-    <!--Notícias e botão de like-->
-
     <main>
-      <div class="main-container">
-        <div class="noticia">
-          <div class="noticia-header">
-            <p>17 de jan, 2024</p>
-            <img
-              src="assets/img/heart.svg"
-              class="icone-coração"
-              alt="icone like"
-              onload="SVGinject(this)"
-            />
-          </div>
+        <div class="main-container">
+            <div class="card">
+                <div class="card-header">
+                    <p>17 de ago, 2023</p>
+                    <img src="assets/img/heart.svg" class="heart-icon" alt="Like icon" onload="SVGInject(this)" />
+                </div>
+                <div class="card-content">
+                    <h2>O que é linguagem de programação? Conheça as principais</h2>
+                    <p>Uma das mais populares vertentes da tecnologia da informação, a área de programação segue tendo muita demanda de trabalho justamente pela velocidade com que dispositivos tecnológicos vêm avançando.</p>
+                </div>
+            </div>
 
-          <div class="noticia-content">
-            <h2>O que é linguagem de programação? Conheça as principais</h2>
-            <p>
-              Uma das mais populares vertentes da tecnologia da informação, a
-              área de programação segue tendo muita demanda de trabalho
-              justamente pela velocidade com que dispositivos tecnológicos vêm
-              avançando.
-            </p>
-          </div>
-        </div>
-        <div class="noticia">
-          <div class="noticia-header">
-            <p>12 de mar 2024</p>
-            <img
-              src="assets/img/heart.svg"
-              class="icone-coração"
-              alt="icone like"
-              onload="SVGinject(this)"
-            />
-          </div>
+            <div class="card">
+                <div class="card-header">
+                    <p>12 de jul, 2023</p>
+                    <img src="assets/img/heart.svg" class="heart-icon" alt="Like icon" onload="SVGInject(this)" />
+                </div>
+                <div class="card-content">
+                    <h2>GitHub agora permite fazer login sem precisar de senha</h2>
+                    <p>O GitHub anunciou nesta quarta-feira (12) o acesso a partir das passkeys, método de autenticação sem senhas. A novidade está disponível em uma versão beta pública e pode substituir a autenticação em dois fatores.</p>
+                </div>
+            </div>
 
-          <div class="noticia-content">
-            <h2>GitHub agora permite fazer login sem precisar de senha</h2>
-            <p>
-              O GitHub anunciou nesta quarta-feira (12) o acesso a partir das
-              passkeys, método de autenticação sem senhas. A novidade está
-              disponível em uma versão beta pública e pode substituir a
-              autenticação em dois fatores.
-            </p>
-          </div>
+            <div class="card">
+                <div class="card-header">
+                    <p>21 de jun, 2024</p>
+                    <img src="assets/img/heart.svg" class="heart-icon" alt="Like icon" onload="SVGInject(this)" />
+                </div>
+                <div class="card-content">
+                    <h2>Por que os hiperlinks são azuis em sua maioria?</h2>
+                    <p>Quem navega na internet, certamente já percebeu que ela conta com diversos recursos para tornar a nossa vida mais fácil. Entre essas opções podemos mencionar os hiperlinks &#45; uma palavra ou termo clicável que direciona o leitor.</p>
+                </div>
+            </div>
         </div>
-        <div class="noticia">
-          <div class="noticia-header">
-            <p>21 de jun 2024</p>
-            <img
-              src="assets/img/heart.svg"
-              class="icone-coração"
-              alt="icone like"
-              onload="SVGinject(this)"
-            />
-          </div>
-
-          <div class="noticia-content">
-            <h2>Por que os hiperlinks são azuis em sua maioria?</h2>
-            <p>
-              Quem navega na internet, certamente já percebeu que ela conta com
-              diversos recursos para tornar a nossa vida mais fácil. Entre essas
-              opções podemos mencionar os hiperlinks - uma palavra ou termo
-              clicável que direciona o leitor.
-            </p>
-          </div>
-        </div>
-      </div>
     </main>
 
     <script src="assets/js/script.js"></script>
-  </body>
+</body>
 </html>
